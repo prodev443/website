@@ -1,0 +1,93 @@
+@import 'resume', 'skills';
+$breakpoint-lg: 1440px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
+
+.max-width {
+  max-width: auto;
+  @media (min-width: $breakpoint-lg) {
+    max-width: 1440px;
+  }
+}
+
+#intro-container {
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  background-color: black;
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  overflow: hidden;
+
+  .presentation {
+    color: white;
+    position: absolute;
+    left: 45%;
+    bottom: 35%;
+    margin: auto;
+    font-size: 48pt;
+    @media (max-width: $breakpoint-md) {
+      left: auto;
+      display: flex;
+      justify-content: center;
+      font-size: 36pt;
+      bottom: 30%;
+    }
+    @media (max-width: $breakpoint-sm) {
+      left: auto;
+      display: flex;
+      justify-content: center;
+      font-size: 28pt;
+      bottom: 30%;
+    }
+  }
+
+  .profession-description {
+    position: absolute;
+    color: white;
+    left: 10%;
+    bottom: 17%;
+    margin: auto;
+    font-size: 62pt;
+    z-index: 10;
+    @media (max-width: $breakpoint-md) {
+      left: auto;
+      display: flex;
+      justify-content: center;
+      font-size: 48pt;
+      bottom: 15%;
+    }
+    @media (max-width: $breakpoint-sm) {
+      left: auto;
+      display: flex;
+      justify-content: center;
+      font-size: 28pt;
+      bottom: 15%;
+    }
+  }
+
+  .profession-description-shadow {
+    position: absolute;
+    color: rgb(255, 255, 255, 0.5);
+    left: 17%;
+    bottom: 5%;
+    margin: auto;
+    font-size: 72pt;
+    @media (max-width: $breakpoint-md) {
+      left: auto;
+      display: flex;
+      justify-content: center;
+      font-size: 54pt;
+    }
+    @media (max-width: $breakpoint-sm) {
+      left: auto;
+      display: flex;
+      justify-content: center;
+      font-size: 44pt;
+    }
+  }
+}
+
+
+

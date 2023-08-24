@@ -1,0 +1,238 @@
+@import "https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css";
+@import "https://fonts.googleapis.com/css2?family=Jura:wght@500;600;900&display=swap";
+#resume {
+  background-color: #0c0a0a;
+  position: relative;
+  height: 500px;
+  font-family: "Poppins", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+@media (max-width: 800px) {
+  #resume {
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+#resume #resume-description {
+  position: absolute;
+  background-color: #292626;
+  min-width: 40%;
+  max-width: 40%;
+  min-height: 90%;
+  top: 5%;
+  left: 10%;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 800px) {
+  #resume #resume-description {
+    min-width: 90%;
+    max-width: 90%;
+    position: relative;
+    left: 5%;
+  }
+}
+#resume #resume-description h1 {
+  font-size: 1.2rem;
+}
+#resume #resume-description ul {
+  padding: 0;
+  margin: 0;
+}
+#resume #resume-description ul li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+@media (max-width: 1070px) {
+  #resume #resume-description ul li {
+    font-size: 1.2rem;
+  }
+}
+#resume #resume-description ul li span {
+  min-width: 70px;
+  max-width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+  background-color: #3f3b3b;
+  border-radius: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#resume #computer {
+  background-color: #3f3b3b;
+  min-width: 40%;
+  max-width: 40%;
+  min-height: 80%;
+  position: absolute;
+  top: 10%;
+  left: 49%;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+  font-size: 1.7rem;
+}
+@media (max-width: 1105px) {
+  #resume #computer {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 800px) {
+  #resume #computer {
+    position: relative;
+    min-width: 90%;
+    max-width: 90%;
+    left: 5%;
+  }
+}
+
+#skills h1 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+#skill-cards ul li {
+  list-style: none;
+  max-width: 250px;
+  min-width: 250px;
+  height: 300px;
+}
+#skill-cards ul li .skill-card {
+  max-width: 250px;
+  min-width: 250px;
+  height: 250px;
+  font-family: "Jura", sans-serif;
+  color: white;
+  background-color: var(--accent-color);
+  position: relative;
+  filter: drop-shadow(0px 3px 5px #000);
+}
+#skill-cards ul li .skill-card .icon {
+  font-size: 3rem;
+}
+#skill-cards ul li .skill-card h1 {
+  font-size: 2rem;
+}
+#skill-cards ul li .skill-card p {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  text-align: center;
+}
+#skill-cards ul li .skill-card::before {
+  position: absolute;
+  top: 250px;
+  content: "";
+  width: 250px;
+  height: 50px;
+  border-style: none;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  background-color: var(--accent-color);
+}
+
+.max-width {
+  max-width: auto;
+}
+@media (min-width: 1440px) {
+  .max-width {
+    max-width: 1440px;
+  }
+}
+
+#intro-container {
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  background-color: black;
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  overflow: hidden;
+}
+#intro-container .presentation {
+  color: white;
+  position: absolute;
+  left: 45%;
+  bottom: 35%;
+  margin: auto;
+  font-size: 48pt;
+}
+@media (max-width: 768px) {
+  #intro-container .presentation {
+    left: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 36pt;
+    bottom: 30%;
+  }
+}
+@media (max-width: 576px) {
+  #intro-container .presentation {
+    left: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 28pt;
+    bottom: 30%;
+  }
+}
+#intro-container .profession-description {
+  position: absolute;
+  color: white;
+  left: 10%;
+  bottom: 17%;
+  margin: auto;
+  font-size: 62pt;
+  z-index: 10;
+}
+@media (max-width: 768px) {
+  #intro-container .profession-description {
+    left: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 48pt;
+    bottom: 15%;
+  }
+}
+@media (max-width: 576px) {
+  #intro-container .profession-description {
+    left: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 28pt;
+    bottom: 15%;
+  }
+}
+#intro-container .profession-description-shadow {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.5);
+  left: 17%;
+  bottom: 5%;
+  margin: auto;
+  font-size: 72pt;
+}
+@media (max-width: 768px) {
+  #intro-container .profession-description-shadow {
+    left: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 54pt;
+  }
+}
+@media (max-width: 576px) {
+  #intro-container .profession-description-shadow {
+    left: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 44pt;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
